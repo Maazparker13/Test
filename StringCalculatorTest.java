@@ -1,12 +1,16 @@
 class StringCalculator {
+
+    //Created an add method which takes a string input called numbers
     public int add(String numbers) {
         if (numbers.isEmpty()) {
             return 0;
         }
 
+        //Created an array of string by splitting the inpur ","
         String[] nums = numbers.split(",");
         int sum = 0;
 
+        //Used Enhanced For Loop
         for (String num : nums) {
             sum += Integer.parseInt(num.trim());
         }
